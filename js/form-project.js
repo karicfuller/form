@@ -13,10 +13,16 @@ $(document).ready(function() {
     var place = $("#place").val();
     var nature = $("#nature").val();
 
-  	return "You should go to Hawaii, " + first_name + " " + last_name
+    if  (ocean === "1" && place === "1") {
+      var destination = "Los Angeles";
+      return "You should go to Los Angeles, " + first_name + " " + last_name
+    }
 
- var destination
-}
+    if  (weather === "2" && place === "2") {
+      var destination = "Santa Barbara";
+      return "You should go to Santa Barbara, " + first_name + " " + last_name
+    }
+  }
 
   function find_vacation() {
   	var destination = find_destination();
@@ -26,4 +32,5 @@ $(document).ready(function() {
 
   $("button").on("click", find_vacation);
 
+    event.preventDefault();
 });
