@@ -7,15 +7,21 @@ $(document).ready(function() {
   function find_destination() {
     var first_name = $("#first-name").val();
     var last_name = $("#last-name").val();
-    var age = $("#age").val();
+    var age = parseInt($("#age").val());
     var weather = $("#weather").val();
     var ocean = $("#ocean").val();
     var place = $("#place").val();
     var nature = $("#nature").val();
 
+
+//Front-end logic
+
     if  (ocean === "1" && place === "1") {
       var destination = "Los Angeles";
       return "You should go to Los Angeles, " + first_name + " " + last_name
+    } else if (age > "21") {
+      var destination = "Oregon";
+      return "You should go to Oregon, but don't party too hard, " + " " + first_name + " " + last_name
     }
 
     if  (weather === "2" && place === "2") {
@@ -27,7 +33,6 @@ $(document).ready(function() {
   function find_vacation() {
   	var destination = find_destination();
   	show_answer(destination);
-    return false;
   }
 
   $("button").on("click", find_vacation);
