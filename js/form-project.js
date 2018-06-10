@@ -13,7 +13,6 @@ $(document).ready(function() {
     var result = weather + place + season + money + food;
 
 
-
     if (result == 0) {
       $('#vacation0').show();
     } else if (result >= 12) {

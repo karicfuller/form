@@ -1,21 +1,38 @@
+.vacation0, .vacation1, .vacation2, .vacation3 {
+  display: none;
+}
+
 .jumbotron {
   background-color: pink;
   text-align: center;
+  margin-top: 30px;
 }
 
 .form-name {
-  width: 500px
+  width: 250px
 }
 
-.form-weather {
-  width: 250px;
+.form-group {
+  width: 175px;
 }
 
-.form-age {
-  width: 200px
-}
 
 .btn {
   color: purple;
   background: pink;
+  font-size: 20px;
+}
+
+.container {
+  padding-bottom: 30px;
+}
+
+.result {
+  margin-top: 15px;
+}
+
+img {
+  float: right;
+  height: 300px;
+  width: 500px;
 }
