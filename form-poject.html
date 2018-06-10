@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/form-project.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/form-project.js"></script>
+    <title>Find Your Dream Vacation</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+      <h1>Let's Find Your Dream Vacation!</h1>
+      </div>
+
+        <form id="vacation">
+
+          <div class="form-name">
+            <label for="first-name">First Name</label>
+            <input id="first-name" class="form-control" type="text">
+          </div><br>
+
+          <div class="form-name">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" class="form-control" type="text">
+          </div><br>
+
+          <div class="form-group">
+            <h5><b>What is your favorite type of weather?</b></h5>
+            <select class="form-control" id="weather">
+              <option value="0">Select</option>
+              <option value="1">Hot</option>
+              <option value="2">Warm</option>
+              <option value="3">Cold</option>
+            </select>
+
+            <h5><b>Do you like the city or country?</b></h5>
+            <select class="form-control" id="place">
+              <option value="0">Select</option>
+              <option value="1">City</option>
+              <option value="2">Country</option>
+              <option value="3">No Preference</option>
+            </select>
+
+            <h5><b>When do you plan to travel?</b></h5>
+            <select class="form-control" id="season">
+              <option value="0">Select</option>
+              <option value="1">Winter</option>
+              <option value="2">Spring</option>
+              <option value="3">Summer</option>
+              <option value="4">Fall</option>
+            </select>
+
+            <h5><b>When you go on vacation, how important is money?</b></h5>
+            <select class="form-control" id="money">
+              <option value="0">Select</option>
+              <option value="1">Extremely Important, I'm broke!</option>
+              <option value="2">Not really a big deal. I have money saved for this trip.</option>
+              <option value="3">I just want to have a good time, but the less expensive, the better!</option>
+            </select>
+
+            <h5><b>When I go on vacation, I want food to be . . .</b></h5>
+            <select class="form-control" id="food">
+              <option value="0">Select</option>
+              <option value="1">I look forward to world class cuisine, fine wines and meals to remember!</option>
+              <option value="2">I want food specific to the location and what is most popular there</option>
+              <option value="3">I don't really care, food is food</option>
+            </select>
+
+
+          </div>
+
+          <button type="submit" class="btn">Let's find you a vaction spot!</button>
+        </form>
+
+
+        <div class="vacation0" id="vacation0">
+          <p class="result"><strong>Please make a selection</strong></p>
+        </div>
+
+        <div class="vacation1" id="vacation1">
+          <p class="result"><strong>You should go to <em>Hawaii</em> for sure! You'll love it there!</strong></p>
+        </div>
+
+        <div class="vacation2" id="vacation2">
+          <p class="result"><strong>You should go to <em>California</em>! But watch out! They drive like maniacs there!</strong></p>
+        </div>
+
+        <div class="vacation3" id="vacation3">
+          <p class="result"><strong>You should go to <em>Oregon</em>! See some trees. Smoke some weed. Relax!</strong></p>
+        </div>
+
+        </div>
+      </div>
+    </body>
+  </html>

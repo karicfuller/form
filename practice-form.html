@@ -2,12 +2,13 @@
 <html>
   <head>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/form-project.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/form-project.js"></script>
     <title>Find Your Dream Vacation</title>
   </head>
   <body>
+
     <div class="container">
       <div class="jumbotron">
       <h1>Find Your Dream Vacation!</h1>
@@ -41,15 +42,15 @@
 
           <div class="form-ocean">
             <label for="ocean">Do You Like the Ocean?</label><br>
-            <select class="form-weather" id="weather">
+            <select class="form-ocean" id="ocean">
               <option value="1">Yes</option>
               <option value="2">No</option>
             </select>
           </div><br>
 
-          <div class="form-location">
-            <label for="location">Where Do You Prefer to Be?</label><br>
-            <select class="form-weather" id="weather">
+          <div class="form-place">
+            <label for="place">Where Do You Prefer to Be?</label><br>
+            <select class="form-place" id="place">
               <option value="1">City</option>
               <option value="2">Country</option>
               <option value="3">No Preference</option>
@@ -67,8 +68,11 @@
             <button type="submit" class="btn">Find My Vacation!</button>
 
         </form>
-
+        <br>
+        <div id="destination">
+        </div>
       </div>
     </div>
+
   </body>
 </html>
